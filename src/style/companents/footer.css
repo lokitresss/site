@@ -1,0 +1,64 @@
+footer {
+    display: flex;
+    margin: 100px 10% 50px 10%;
+    gap: 50px;
+}
+
+footer button {
+    width: 100% !important;
+}
+
+.solus-block {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 50px;
+    flex-grow: 1;
+}
+
+.solus-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 40px;
+}
+
+.solus-info h3 {
+    color: var(--primary-color);
+}
+
+.solus-block-links {
+    display: flex;
+    gap: 73px;
+}
+
+.solus-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.solus-links a {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.footer-copyright {
+    color: var(--neutral-color);
+    font-size: 18px;
+}
+
+.support-now-block {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-grow: 1;
+    background-image: url(/src/assets/img/flowers-img.png);
+    background-repeat: no-repeat;
+    background-position: right -10px top 40px;
+    color: white;
+    width: 460px;
+    background-color: var(--primary-color);
+    padding: 75px 70px;
+    font-size: 44px;
+    border-radius: 50px;
+}

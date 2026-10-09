@@ -1,0 +1,26 @@
+header {
+    padding: var(--header-padding);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: var(--primary-color);
+
+}
+
+.links-left, .links-right {
+    display: flex;
+    gap: var(--nav-links-gap);
+    font-size: var(--nav-links-font-size);
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    font-size: var(--header-logo-font);
+    font-weight: bold;
+}

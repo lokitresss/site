@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solus | Main Menu</title>
+    <link rel="stylesheet" href="/src/style/base/fonts.css">
+    <link rel="stylesheet" href="/src/style/base/variables.css">
+    <link rel="stylesheet" href="/src/style/base/global.css">
+    <link rel="stylesheet" href="/src/style/companents/header.css">
+    <link rel="stylesheet" href="/src/style/companents/modal.css">
+    <link rel="stylesheet" href="/src/style/companents/form.css">
+    <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/companents/footer.css">
+    <script src="/src/scripts/modal.js" defer></script>
+</head>
+<body>
+    <div class="modal" data-js-modal>
+        <div class="modal-window" data-js-modal="window">
+            <form action="">
+                <button class="modal-close-button" type="button" onclick="modalClose()">x</button>
+                <p>
+                    <label for="">Your Name</label>
+                    <input type="text" required placeholder="Ivan">
+                </p>
+                <p>
+                    <label for="">Your Email</label>
+                    <input type="email" required placeholder="example@gmail.com">
+                </p>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="links-left">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+            </div>
+                <a href="#" class="logo">Solus</a>
+            <div class="links-right">
+                <a href="#">Therapists</a>
+                <a href="#">Resources</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner-box">
+                <h1>
+                    Support for Your<br>Mental Well-being
+                </h1>
+                <p>
+                    Connect with licensed therapists, counselors,<br>and wellness coaches to support your journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="mental-health-promo">
+            <div class="health-about">
+                <span>
+                    HOW IT WORKS
+                </span>
+                <h2>
+                    We Help You<br>Prioritize Your<br>Mental Health
+                </h2>
+                <p>
+                    Browse therapists, book a session, and<br>start your healing journey with trusted<br>professionals.
+                </p>
+                <button class="btn accent-btn" onclick="modalOpen()">Find a Therapist</button>
+            </div>
+
+            <div class="health-box">
+                <img src="/src/assets/img/health.png">
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="services-about">
+                <span>
+                    SERVICES
+                </span>
+                <h2>
+                    Your Path to<br>Well-being
+                </h2>
+                <p>
+                    Discover expert guidance for a healthier<br>mind and balanced life.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <div class="meditation-block">
+                    <h3>
+                        Mindfulness &<br>Meditation
+                    </h3>
+                    <p>
+                        Guided meditation sessions<br>and stress management<br>techniques.
+                    </p>
+                    <button class="btn default-btn">Learn More</button>
+                </div>
+    
+                <div class="therapy-block">
+                    <h3>
+                        One-on-One<br>Therapy
+                    </h3>
+                    <p>
+                        Virtual and in-person therapy<br>sessions with licensed<br>professionals.
+                    </p>
+                    <button class="btn default-btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="coaching-block">
+                <h3>
+                    Wellness Coaching
+                </h3>
+                <p>
+                    Personalized guidance to help you build healthier habits,<br>manage stress, and achieve balance in all areas of your life.
+                </p>
+                <p>
+                    Our wellness coaches support you in creating sustainable<br>routines for mental, emotional, and physical well-being.
+                </p>
+                <button class="btn accent-btn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-about">
+                <span>
+                    TESTIMONIALS
+                </span>
+                <h2>
+                    What Our Clients<br>Are Saying
+                </h2>
+                <p>
+                    Positive experiences from users who have<br>benefited from therapy or wellness<br>programs.
+                </p>
+
+                <div class="review-btns">
+                    <button class="review-btn-prev"></button>
+                    <button class="review-btn-next"></button>
+                </div>
+            </div>
+
+            <div class="review-boxes">
+                <div class="review-cards">
+                    <div class="review-card-beige">
+                        <blockquote class="review-card-quote">
+                            <p>
+                                "Solus made it so easy to find the right therapist for me. The sessions have truly transformed my mindset, and I feel more in control of my emotions than ever before!"
+                            </p>
+                        </blockquote>
+                        <cite class="review-card-author">— Anna R., 32</cite>
+                    </div>
+
+                    <div class="review-card-green">
+                        <blockquote class="review-card-quote">
+                            <p>
+                                "I was struggling with stress and anxiety, but the mindfulness programs on Solus have helped me regain balance. I finally feel like I'm prioritizing my mental well-being."
+                            </p>
+                        </blockquote>
+                        <cite class="review-card-author">— Mark S., 41</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners-box">
+            <span>
+                Our Partners
+            </span>
+            <img src="/src/assets/icons/wealthsimple.svg">
+            <img src="/src/assets/icons/notion.svg">
+            <img src="/src/assets/icons/medium.svg">
+            <img src="/src/assets/icons/braze.svg">
+            <img src="/src/assets/icons/sonos.svg">
+        </div>
+
+        <div class="resources">
+            <div class="resources-block">
+                <span>
+                    EXPLORE & LEARN
+                </span>
+                <h2>
+                    Resources for<br>Your Well-being
+                </h2>
+                <p>
+                    Explore expert insights, self-care guides,<br>and tools to support your mental health.
+                </p>
+            </div>
+
+            <div class="resources-list">
+                <div class="guide-block">
+                    <div class="guide-info">
+                        <h3>
+                            Articles &<br>Guides
+                        </h3>
+                        <p>
+                            Practical tips on stress<br>management, mindfulness, and<br>emotional resilience.
+                        </p>
+                    </div>
+                    <button class="btn colored-btn">Explore</button>
+                </div>
+
+                <div class="relaxation-block">
+                    <div class="relaxation-info">
+                        <h3>
+                            Meditation &<br>Relaxation
+                        </h3>
+                        <p>
+                            Audio sessions for guided<br>meditation and deep breathing<br>exercises.
+                        </p>
+                    </div>
+                    <button class="btn colored-btn">Explore</button>
+                </div>
+
+                <div class="workshop-block">
+                    <div class="workshop-info">
+                        <h3>
+                            Webinars &<br>Workshops
+                        </h3>
+                        <p>
+                            Live and recorded sessions with<br>mental health professionals.
+                        </p>
+                    </div>
+                    <button class="btn colored-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="community-block">
+            <div class="community-info">
+                <span>
+                    COMMUNITY
+                </span>
+                <h2>
+                    You’re Not Alone<br>on This Journey
+                </h2>
+                <p>
+                    Connect with others, share experiences,<br>and find encouragement in a safe,<br>supportive space.
+                </p>
+            </div>
+            <button class="btn community-btn">Join the Community</button>
+        </div>
+
+        <div class="qna-block">
+            <div class="qna-left-side">
+                <div class="qna-info">
+                    <span>
+                        NEED HELP?
+                    </span>
+                    <h2>
+                        Frequently<br>Asked Questions
+                    </h2>
+                    <p>
+                        Find answers to common questions about<br>our services, therapy, and mental well-<br>being.
+                    </p>
+                </div>
+
+                <div class="qna-emotion">
+                    <img src="/src/assets/img/qna-img.png">
+                </div>
+            </div>
+
+            <div class="qna-questions">
+                <details name="qna">
+                    <summary>How do I book a therapy session?<img src="/src/assets/icons/+.svg"></summary>
+                </details>
+
+                <details name="qna">
+                    <summary>Are online sessions available?<img src="/src/assets/icons/+.svg"></summary>
+                </details>
+
+                <details name="qna">
+                    <summary>What’s the difference between therapy and<br>coaching?<img src="/src/assets/icons/+.svg"></summary>
+                </details>
+
+                <details name="qna">
+                    <summary>Do I need a subscription to access services?<img src="/src/assets/icons/+.svg"></summary>
+                </details>
+
+                <details name="qna">
+                    <summary>Can I switch therapists if I don’t feel the right<br>connection?<img src="/src/assets/icons/+.svg"></summary>
+                </details>
+
+                <details name="qna">
+                    <summary>Is my information and session history kept<br>confidential?<img src="/src/assets/icons/+.svg"></summary>
+                </details>
+            </div>
+        </div>
+
+        <div class="contact-block">
+            <div class="contact-text">
+                <span>
+                    Get in Touch
+                </span>
+                <h2>
+                    We’re Here to<br>Support You
+                </h2>
+                <p>
+                    Whether you have questions, need help getting<br>started, or want to learn more — reach out anytime.
+                </p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h3>Contact Details:</h3>
+                    <div class="contact-lines">
+                        <div class="contact-line">
+                            <h4>Email:</h4>
+                            <span>support@solus.com</span>
+                        </div>
+                        
+                        <div class="contact-line">
+                            <h4>Phone:</h4>
+                            <span>+1 (123) 456-7890</span>
+                        </div>
+                        
+                        <div class="contact-line">
+                            <h4>Address:</h4>
+                            <span>123 Wellness Way, Calm City, CA 90210</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" class="social-link">
+                            <img src="/src/assets/icons/in.svg">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="/src/assets/icons/facebook.svg">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="/src/assets/icons/instagram.svg">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="/src/assets/icons/whatsapp.svg">
+                        </a>
+                    </div>
+
+                    <p>We typically respond within 12 hours.</p>
+                </div>
+
+                <div class="contact-form">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="form-email">Email</label>
+                        <input class="form-input" type="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="form-msg">Message</label>
+                        <textarea class="form-textarea" placeholder="Message" rows="1"></textarea>
+                    </div>
+
+                    <button class="btn accent-btn form-btn">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="solus-block">
+            <div class="solus-info">
+                <h3>Solus</h3>
+                <div class="solus-block-links">
+                    <div class="solus-links">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Therapists</a>
+                        <a href="#">Resources</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="solus-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div class="solus-links">
+                        <a href="#">Terms Of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <p class="footer-copyright">&copy; [2035] Solus. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="support-now-block">
+            <h3>Find<br>Support,<br>Guidance,<br>and Balance.</h3>
+            <button class="btn">Find Support Now</button>
+        </div>
+    </footer>
+</body>
+</html>
